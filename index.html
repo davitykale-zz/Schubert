@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html ng-app="Schubert">
+<head profile="http://www.w3.org/2005/10/profile">
+<link rel="icon" 
+      type="image/png" 
+      href="favicon.png">
+<title>Amherst Schubert Project</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<META NAME="htdig-noindex">
+<META NAME="ROBOTS" content="NOINDEX, NO FOLLOW">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+	<div class="header">
+		<div class="banner">
+			<a href="#/">
+				<img class="full" src="images/banner.jpg">
+			</a>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<a class="col-md-12 mobile" href="#/">
+				<img class="img-responsive mobile" src="images/mobile_banner.jpg">
+			</a>
+		</div>
+	</div>
+	<div class="container-fluid red">
+		<!-- <span class="glyphicon glyphicon-chevron-down"></span> -->
+		<div class="container">
+			<div class="row menu-full">
+				<ul class="col-md-12 menu red">
+					<li><a href="#/">HOME</a></li>
+				  	<li class="">
+				  		<a href="#/events">EVENTS</a>
+				  		<!-- <ul class="dropdown">
+				  			<li><a>Quintet Sound Installation</a></li>
+				  			<li><a>A Late Quartet</a><li>
+				  			<li><a>Symposium</a></li>
+				  			<li><a>Live Recording Project</a></li>
+				  		</ul> -->
+				  	</li>
+					<li><a href="#/about">ABOUT</a></li>
+					<li><a href="#/schedule">SCHEDULE</a></li>
+					<li><a href="#/news">NEWS</a></li>
+					<li><a href="#/join">TICKETS</a></li>
+				</ul>	
+			</div>
+			<div class="menu-mobile">
+				<div class="row">
+					<button ng-click="toggleMenu()">
+						<span ng-class="[style1, style2]"></span>
+					</button>
+				</div>
+				<div class="row">
+					<ul ng-click="toggleMenu()" class="col-md-12 menu-mobile red" ng-show="menu">
+						<li><a href="#/">HOME</a></li>
+						<li><a href="#/events">EVENTS</a></li>
+						<li><a href="#/about">ABOUT</a></li>
+						<li><a href="#/schedule">SCHEDULE</a></li>
+						<li><a href="#/news">NEWS</a></li>
+						<li><a href="#/join">TICKETS</a></li>
+				</ul>	
+				</div>
+			</div>
+		</div>	
+	</div>
+	<div class="clearBoth"></div>
+	<div class="container page">
+		<div ng-view></div>
+		<div footer></div>
+	</div>
+	
+	
+
+</body>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-route.min.js"></script>
+<script type="text/javascript" src="scripts/script.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/twitter-timeline.js"></script>
+<script type="text/javascript" src="scripts/mediaPlayer.js"></script>
+<script type="text/javascript" src="scripts/angular-touch.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50595627-1', 'amherst.edu');
+  //ga('send', 'pageview');
+
+</script>
