@@ -5,14 +5,6 @@ var Schubert = angular.module('Schubert', [
 ]);
 
 Schubert.run(function($rootScope, $location, $window) {
-	// $rootScope.routes = {
-	// 	events: false,
-	// 	about: false,
-	// 	schedule: false,
-	// 	news: false,
-	// 	join: false
-	// };
-
 	$rootScope.menu = false;
 	$rootScope.style1 = "glyphicon";
 	$rootScope.style2 = "glyphicon-chevron-down";
@@ -23,34 +15,6 @@ Schubert.run(function($rootScope, $location, $window) {
 		
 	}
 
-	// function _handleRoute(url) {
-	// 	for(var key in $rootScope.routes) {
-	// 		$rootScope.routes[key] = false;
-	// 	}
-	// 	switch(url) {
-	// 		case "/about":
-	// 			$rootScope.routes["about"] = true;
-	// 			break;
-	// 		case "/events":
-	// 			$rootScope.routes["events"] = true;
-	// 			break;
-	// 		case "/news":
-	// 			$rootScope.routes["news"] = true;
-	// 			break;
-	// 		case "/join":
-	// 			$rootScope.routes["join"] = true;
-	// 			break;
-	// 		case "/schedule":
-	// 			$rootScope.routes["schedule"] = true;
-	// 			break;
-	// 		default:
-	// 			break;
-	// 	}
-	// }
-
-	// $rootScope.$on('$routeChangeSuccess', function() {
-	// 	_handleRoute($location.url());
-	// })
 });
 
 Schubert.config(function($routeProvider) {
@@ -323,11 +287,3 @@ var people = [
 		bio: "Ioanida Costache arrives August 5 and will create handouts for all the events as well as crafting the preconcert sessions and postconcert sessions. She is completing a year as a Fulbright scholar, working on the subject: \u0022A Search for the Roots of Lautar Music.\u0022"
 	}
 ];
-
-
-
-
-		// <audio class="col-sm-12" controls>
-		// 		  <source src="audio/01 - String Quartet No. 16 in F Major, Op. 135_ I. Allegretto.mp3" type="audio/mpeg">
-		// 		Your browser does not support the audio element.
-		// 		</audio>
